@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+    h1{color: brown;}
+ h2{color: brown;}
+
+ h1{background-color: rgb(127, 193, 255);} 
+ p{color: rgb(233, 122, 122);}
+
+
+img{border-radius: 8px;}
+
+.bandeau {
+  display: flex;
+  flex-direction: column; /* Mise en page 1 colonne par défaut (mobile) */
+  flex: 1; /* Permet au contenu de pousser le footer vers le bas */
+  padding: 15px;
+  gap: 15px;
+}
+
+/* Styles pour les colonnes */
+.colonne {
+  padding: 20px;
+  background-color: rgba(127, 140, 255, 0.247);
+  border-radius: 8px;
+}
+
+ /* Styles pour le pied de page */
+footer {
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto; /* Pousse le footer vers le bas */
+}
+
+@media screen and (min-width: 992px) {
+  .bandeau {
+    flex-direction: row; /* Passage en mode 3 colonnes */
+  }
+  .colonne {
+    flex: 1; /* Chaque colonne prend une part égale de l'espace disponible */
+  }
+}
+
+i{color: black;} 
+i.icon_code {background-color:darkblue; height: 32px; vertical-align: middle; line-height: 32px; border-radius: 50%;color: #fff;} 
+i.icon_ps {background-color: blue; height: 32px; vertical-align: middle; line-height: 32px; border-radius: 50%;color: #fff;} 
+i.icon_mo {background-color: #fff; height: 32px; vertical-align: middle; line-height: 32px; border-radius: 50%; color: rgb(0, 81, 255);}
+i.icon_git{background-color: #fff; height: 32px; vertical-align: middle; line-height: 32px; border-radius: 50%;}
